@@ -36,13 +36,13 @@ body{    background: rgba(128, 128, 128, 0.299);}
     padding: 50px;
 flex-direction: column;
     display: flex;
-    align-items: flex-start;
+    align-items: start;
     justify-content: space-around;
 }
 .form-container{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
 }
 .form{
@@ -217,3 +217,25 @@ color: black;
     height:200px;
     text-align: justify;
 }
+@media only screen and (max-width: 1200px) {
+    .form-container{
+  flex-direction: column;
+  align-items: center;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .cv-form-load{
+  
+        width: 700px;
+    ;
+    
+    }
+    
+  }
+  @media only screen and (max-width: 700px) {
+    .cv-form-load{
+  
+        width: 600px;
+    ;
+    
+    }}
